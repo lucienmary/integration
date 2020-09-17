@@ -1,0 +1,31 @@
+small{
+    color: $c-text-light;
+    font-size: 18px;
+    position: relative;
+    &:after{
+        content: '';
+        width: 28px;
+        height: 2px;
+        background-color: $c-main;
+        position: absolute;
+        bottom: 5px;
+        right: -38px;
+    }
+}
+
+h1, h2{
+    margin-top: 28.8px;
+    font-weight: bold;
+    font-size: 35.13px;
+    margin-bottom: 35.13px;
+}
+h3{
+    font-size: 28.8px;
+}
+
+p{
+    color: $c-text-light;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 0;
+}

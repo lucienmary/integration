@@ -1,0 +1,53 @@
+.dash{
+    list-style: none;
+    padding: 0;
+
+    display: block;
+    margin: auto;
+    text-align: center;
+
+    margin-top: 20px;
+    &__el{
+        font-size: 0;
+        border: 1px solid $c-text-light;
+        box-sizing: border-box;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        display: inline-block;
+        margin-right: 13px;
+        &:last-child{
+            margin-right: inherit;
+        }
+        &--used{
+            background-color: $c-main;
+            width: 20px;
+            border: 1px solid $c-main;
+        }
+    }
+}
+
+.main-img{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.gallery{
+    img{
+        width: 100%;
+    }
+    &__el{
+        box-sizing: border-box;
+        border: 3px solid #ffffff;
+    }
+}
+
+.img-blog{
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

@@ -9,15 +9,24 @@
     <meta name="author" content="Lucien Mary">
 
     <title>Intégration 01</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/styles/app.css">
 </head>
 <body>
     <header>
-        <div class="">
+        <div class="logo">
             <a href="#"><p>L</p></a>
         </div>
-        <nav>
-            <ul>
+
+        <nav class="container">
+
+            <a class="burger" href="#">
+                <p>Menu</p>
+            </a>
+
+            <ul class="hidden">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Blog</a></li>
@@ -25,20 +34,19 @@
             </ul>
         </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">behance</a></li>
-                <li><a href="#">dribbble</a></li>
-                <li><a href="#">linkedin</a></li>
+        <nav class="container">
+            <ul class="socials">
+                <li class="socials__el"><a href="#">twitter</a></li>
+                <li class="socials__el"><a href="#">behance</a></li>
+                <li class="socials__el"><a href="#">dribbble</a></li>
+                <li class="socials__el"><a href="#">linkedin</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- About. -->
-        <section>
-            <div class="">
+    <main class="">
+        <section class="container">
+            <div class="col-12">
                 <small>About</small>
 
                 <h1>Lucien Mary</h1>
@@ -46,82 +54,89 @@
                 <p>With over 8 years of experience in designing for web and user interface designs. She also enjoys </p>
                 <p>working on graphic design and illustrations.</p>
 
-                <a href="#">Work Enquiry</a>
+                <a class="classic-btn" href="#">Work Enquiry</a>
             </div>
 
-            <div class="">
-                <img src="" alt="Img illu">
-                <div class="">Carrousel</div>
-            </div>
-        </section>
-
-        <section>
-            <small>Portfolio</small>
-
-            <h2>Featured</h2>
-
-            <ul>
-                <li><a href="#">Featured</a></li>
-                <li><a href="#">User Interface</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Branding</a></li>
-                <li><a href="#">Graphic Design</a></li>
-            </ul>
-
-            <div class="">
-                <ul>
-                    <li>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                    </li>
+            <div class="col-12">
+                <img class="main-img" src="./assets/images/main-view.png" alt="Img illu">
+                <ul class="dash">
+                    <li class="dash__el dash__el--used">1</li>
+                    <li class="dash__el">2</li>
+                    <li class="dash__el">3</li>
                 </ul>
             </div>
         </section>
 
-        <section>
-            <small>Blog</small>
+        <section class="container">
+            <div class="col-12">
+                <small>Portfolio</small>
 
-            <h2>Recent Articles</h2>
+                <h2>Featured</h2>
 
-            <div class="">
-                <p>12 . 02 . 2020</p>
-                <h3>7 Principles of Effective Icon Design</h3>
-                <p>Before approaching icon design, there are some guidelines and principles that are worth studying. If you want to create effective icon designs, then you should take a holistic approach to issues such as audience, size, simplicity, lighting, perspective, and style.</p>
-                <a href="#">Read More</a>
-
-                <img src="" alt="Img AI/Sketch">
+                <ul class="nav-portfolio">
+                    <li class="nav-portfolio__el nav-portfolio__el--used"><a href="#">Featured</a></li>
+                    <li class="nav-portfolio__el"><a href="#">User Interface</a></li>
+                    <li class="nav-portfolio__el"><a href="#">Web Design</a></li>
+                    <li class="nav-portfolio__el"><a href="#">Branding</a></li>
+                    <li class="nav-portfolio__el"><a href="#">Graphic Design</a></li>
+                </ul>
             </div>
 
-            <div class="">
+            <div class="gallery">
+                <div class="col-12">
+                    <img class="gallery__el" src="./assets/images/galerie-1.png" alt="">
+                </div>
+
+                <div class="col-12">
+                    <div class="row no-gutters">
+                        <img class="col-6 gallery__el gallery__el--tiny" src="./assets/images/galerie-2.png" alt="">
+                        <img class="col-6 gallery__el gallery__el--tiny" src="./assets/images/galerie-3.png" alt="">
+                    </div>
+                    <div class="row no-gutters">
+                        <img class="col-6 gallery__el gallery__el--tiny"src="./assets/images/galerie-4.png" alt="">
+                        <img class="col-6 gallery__el gallery__el--tiny" src="./assets/images/galerie-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="col-12">
+                <small>Blog</small>
+                <h2>Recent Articles</h2>
+            </div>
+
+            <div class="article article--left col-12">
+                <p class="date">12 . 02 . 2020</p>
+                <h3>7 Principles of Effective Icon Design</h3>
+                <p>Before approaching icon design, there are some guidelines and principles that are worth studying. If you want to create effective icon designs, then you should take a holistic approach to issues such as audience, size, simplicity, lighting, perspective, and style.</p>
+                <a class="read-more" href="#">Read More</a>
+
+                <img class="img-blog" src="./assets/images/article-1.png" alt="Img AI/Sketch">
+            </div>
+
+            <div class="article article--right col-12">
                 <p>12 . 02 . 2020</p>
                 <h3>A step-by-step guide to designing a real estate app</h3>
                 <p>Research and usability testing found that the our App for Agents was not meeting the needs of Real Estate Agents around efficiency and speed. We were challenged to re-design the app to address these issues.</p>
-                <a href="#">Read More</a>
+                <a class="read-more" href="#">Read More</a>
 
-                <img src="" alt="Img app verte">
+                <img class="img-blog" src="./assets/images/article-2.png" alt="Img app verte">
             </div>
 
-            <a href="#">View all Articles</a>
+            <div class="centred col-12">
+                <a class="classic-btn classic-btn" href="#">View all Articles</a>
+            </div>
         </section>
 
-        <section>
-            <small>Contact</small>
+        <section class="container">
+            <div class="col-12">
+                <small>Contact</small>
+                <h2>Work Enquiry</h2>
+                <h3>Wanna talk about your next big project?</h3>
+            </div>
 
-            <h2>Work Enquiry</h2>
-            <h3>Wanna talk about your next big project?</h3>
-
-            <form class="" action="index.html" method="post">
+            <form class="col-12" action="index.html" method="post">
                 <label for="name">Full Name <span>*</span> </label>
                 <input type="text" name="name" placeholder="Enter your name">
 
@@ -129,25 +144,31 @@
                 <input type="email" name="email" placeholder="Enter Email Adress">
 
                 <label for="project">Project Type <span>*</span> </label>
-                <select id="cars" name="cars">
-                    <option value="oui">Oui</option>
-                    <option value="non">Non</option>
-                    <option value="peut-etre">Peut-être</option>
-                </select>
+
+                <div class="arrow">
+                    <select name="project">
+                        <option value="oui">Website</option>
+                        <option value="non">UX/UI design</option>
+                        <option value="peut-etre">Autre...</option>
+                    </select>
+                </div>
 
                 <label for="msg">Quick Message</label>
-                <textarea name="msg" rows="8" cols="80"></textarea>
+                <textarea name="msg" rows="8" cols="36"></textarea>
 
-                <button type="submit">Send</button>
+                <button class="classic-btn classic-btn--filled" type="submit">Send</button>
             </form>
         </section>
     </main>
 
-    <footer>
-        <p>© 2020 lucienmary.be</p>
-        <p>Inspired by Burhan Khawaja.</p>
+    <footer class="container">
+        <p class="col-12">© 2020 lucienmary.be - Inspired by Burhan Khawaja.</p>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="/scripts/app.js"></script>
 </body>
 </html>

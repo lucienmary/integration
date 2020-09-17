@@ -1,0 +1,51 @@
+form{
+    font-family: $s-serif;
+
+    label{
+        color: $c-text-light;
+        font-size: 14px;
+        display: block;
+        &:first-child{
+            margin-top: 40px;
+        }
+        span{
+            font-size: 11px;
+            color: $c-main;
+        }
+    }
+    input, select, textarea{
+        border: 1px solid $c-text-light;
+        box-shadow: inherit;
+        border-radius: 10px;
+        background-color: inherit;
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 30px;
+
+        -moz-appearance:none;
+        ea-webkit-appearance:none;
+        appearance:none;
+
+        &:focus{
+            border-color: $c-text;
+        }
+    }
+
+    .arrow{
+        position: relative;
+        &:after{
+            content: '';
+            background-image: url('/assets/images/arrow.png');
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 32px;
+
+            transform: scale(0.75);
+
+            position: absolute;
+            top: 17px;
+            right: 6%;
+            z-index: -1;
+        }
+    }
+}
