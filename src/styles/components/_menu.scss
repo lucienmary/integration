@@ -1,7 +1,7 @@
 .burger{
     padding: 20PX 10px;
     float: right;
-    margin-top: -18.5vw;
+    margin-top: -72px;
     height: 2px;
     margin-bottom: 0;
     p{
@@ -82,7 +82,6 @@
 
 @media (min-width: 576px) {
     .burger{
-        margin-top: -80px;
         p{
             width: 35px;
             &:before{
@@ -108,7 +107,7 @@
 
         float: left;
         display: inline-block;
-        margin-top: -78px;
+        margin-top: -64px;
         list-style: none;
         padding: 0;
 
@@ -144,6 +143,11 @@
             }
         }
     }
+    .nav-portfolio{
+        margin-top: 36px;
+        text-align: right;
+        padding-right: 6px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -155,5 +159,23 @@
 @media (min-width: 1040px) {
     .socials{
         right: 28px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .socials{
+        right: 8px;
+    }
+    .main-nav{
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .socials{
+        right: 28px;
+    }
+    .main-nav{
+        margin-left: inherit;
     }
 }

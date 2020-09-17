@@ -32,16 +32,6 @@
     margin-top: 80px;
 }
 
-.gallery{
-    img{
-        width: 100%;
-    }
-    &__el{
-        box-sizing: border-box;
-        border: 3px solid #ffffff;
-    }
-}
-
 .img-blog{
     max-width: 100%;
     margin-top: 40px;
@@ -49,6 +39,22 @@
 
     &:last-child{
         margin-bottom: 0;
+    }
+}
+
+.row > div {
+      padding: 0 6px !important;
+}
+
+.gallery__el {
+    margin-top: 12px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .img-blog{
+        margin-top: 100px;
     }
 }
 

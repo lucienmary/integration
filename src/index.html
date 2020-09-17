@@ -26,7 +26,7 @@
                 <p>Menu</p>
             </a>
 
-            <ul class="main-nav offset-md-1 col-md-11">
+            <ul class="main-nav offset-md-1 col-md-11 offset-xl-0">
                 <li><a class="active" href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Blog</a></li>
@@ -69,34 +69,38 @@
             </div>
         </section>
 
-        <section class="container">
-            <div class="col-12">
-                <small>Portfolio</small>
+        <section class="">
+            <div class="container clearfix">
+                <small class="">Portfolio</small>
 
-                <h2>Featured</h2>
+                <div class="row">
+                    <h2 class="col-12 col-md-4">Featured</h2>
 
-                <ul class="nav-portfolio">
-                    <li class="nav-portfolio__el nav-portfolio__el--used"><a href="#">Featured</a></li>
-                    <li class="nav-portfolio__el"><a href="#">User Interface</a></li>
-                    <li class="nav-portfolio__el"><a href="#">Web Design</a></li>
-                    <li class="nav-portfolio__el"><a href="#">Branding</a></li>
-                    <li class="nav-portfolio__el"><a href="#">Graphic Design</a></li>
-                </ul>
+                    <ul class="nav-portfolio col-12 col-md-8">
+                        <li class="nav-portfolio__el nav-portfolio__el--used"><a href="#">Featured</a></li>
+                        <li class="nav-portfolio__el"><a href="#">User Interface</a></li>
+                        <li class="nav-portfolio__el"><a href="#">Web Design</a></li>
+                        <li class="nav-portfolio__el"><a href="#">Branding</a></li>
+                        <li class="nav-portfolio__el"><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="gallery">
-                <div class="col-12">
-                    <img class="gallery__el" src="./assets/images/galerie-1.png" alt="">
-                </div>
+            <div class="container">
+                <div class="row gallery">
 
-                <div class="col-12">
-                    <div class="row no-gutters">
-                        <img class="col-6 gallery__el gallery__el--tiny" src="./assets/images/galerie-2.png" alt="">
-                        <img class="col-6 gallery__el gallery__el--tiny" src="./assets/images/galerie-3.png" alt="">
+                    <div class="col-12 col-md-4">
+                        <img class="gallery__el img-fluid" src="./assets/images/galerie-1.png" alt="">
                     </div>
-                    <div class="row no-gutters">
-                        <img class="col-6 gallery__el gallery__el--tiny"src="./assets/images/galerie-4.png" alt="">
-                        <img class="col-6 gallery__el gallery__el--tiny" src="./assets/images/galerie-5.png" alt="">
+
+                    <div class="col-6 col-md-4">
+                        <img class="img-fluid gallery__el" src="./assets/images/galerie-2.png" alt="">
+                        <img class="img-fluid gallery__el" src="./assets/images/galerie-3.png" alt="">
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <img class="img-fluid gallery__el"src="./assets/images/galerie-4.png" alt="">
+                        <img class="img-fluid gallery__el" src="./assets/images/galerie-5.png" alt="">
                     </div>
                 </div>
             </div>
@@ -110,21 +114,31 @@
 
             <div class="articles">
                 <div class="articles__el article--left col-12">
-                    <p class="date">12 . 02 . 2020</p>
-                    <h3>7 Principles of Effective Icon Design</h3>
-                    <p>Before approaching icon design, there are some guidelines and principles that are worth studying. If you want to create effective icon designs, then you should take a holistic approach to issues such as audience, size, simplicity, lighting, perspective, and style.</p>
-                    <a class="read-more" href="#">Read More</a>
-
-                    <img class="img-blog" src="./assets/images/article-1.png" alt="Img AI/Sketch">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="date">12 . 02 . 2020</p>
+                            <h3>7 Principles of Effective Icon Design</h3>
+                            <p>Before approaching icon design, there are some guidelines and principles that are worth studying. If you want to create effective icon designs, then you should take a holistic approach to issues such as audience, size, simplicity, lighting, perspective, and style.</p>
+                            <a class="read-more" href="#">Read More</a>
+                        </div>
+                        <div class="offset-md-1 col-md-5">
+                            <img class="img-blog" src="./assets/images/article-1.png" alt="Img AI/Sketch">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="articles__el article--right col-12">
-                    <p>12 . 02 . 2020</p>
-                    <h3>A step-by-step guide to designing a real estate app</h3>
-                    <p>Research and usability testing found that the our App for Agents was not meeting the needs of Real Estate Agents around efficiency and speed. We were challenged to re-design the app to address these issues.</p>
-                    <a class="read-more" href="#">Read More</a>
-
-                    <img class="img-blog" src="./assets/images/article-2.png" alt="Img app verte">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="img-blog" src="./assets/images/article-2.png" alt="Img app verte">
+                        </div>
+                        <div class="offset-md-1 col-md-6">
+                            <p>12 . 02 . 2020</p>
+                            <h3>A step-by-step guide to designing a real estate app</h3>
+                            <p>Research and usability testing found that the our App for Agents was not meeting the needs of Real Estate Agents around efficiency and speed. We were challenged to re-design the app to address these issues.</p>
+                            <a class="read-more" href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
