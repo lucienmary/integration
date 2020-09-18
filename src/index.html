@@ -15,6 +15,12 @@
     <link rel="stylesheet" type="text/css" href="/styles/app.css">
 </head>
 <body>
+
+    <span class="line"></span>
+    <span class="line line--mid1"></span>
+    <span class="line line--mid2"></span>
+    <span class="line line--right"></span>
+
     <header>
         <div class="logo">
             <a href="#"><p>L</p></a>
@@ -143,36 +149,39 @@
             </div>
 
             <div class="centred col-12">
-                <a class="classic-btn classic-btn" href="#">View all Articles</a>
+                <a class="classic-btn classic-btn--space" href="#">View all Articles</a>
             </div>
         </section>
 
         <section class="container">
-            <div class="col-12">
+            <div class="col-12 col-lg-6">
                 <small>Contact</small>
                 <h2>Work Enquiry</h2>
                 <h3>Wanna talk about your next big project?</h3>
             </div>
 
-            <form class="col-12" action="index.html" method="post">
-                <label for="name">Full Name <span>*</span> </label>
-                <input type="text" name="name" placeholder="Enter your name">
+            <form class="row no-gutters" action="index.html" method="post">
+                <div class="col-12 col-md-5 ">
+                    <label for="name">Full Name <span>*</span> </label>
+                    <input type="text" name="name" placeholder="Enter your name">
 
-                <label for="email">Email Address <span>*</span> </label>
-                <input type="email" name="email" placeholder="Enter Email Adress">
+                    <label for="email">Email Address <span>*</span> </label>
+                    <input type="email" name="email" placeholder="Enter Email Adress">
 
-                <label for="project">Project Type <span>*</span> </label>
-
-                <div class="arrow">
-                    <select name="project">
-                        <option value="oui">Website</option>
-                        <option value="non">UX/UI design</option>
-                        <option value="peut-etre">Autre...</option>
-                    </select>
+                    <label for="project">Project Type <span>*</span> </label>
+                    <div class="arrow">
+                        <select name="project">
+                            <option value="oui">Website</option>
+                            <option value="non">UX/UI design</option>
+                            <option value="peut-etre">Autre...</option>
+                        </select>
+                    </div>
                 </div>
 
-                <label for="msg">Quick Message</label>
-                <textarea name="msg" rows="8" cols="36"></textarea>
+                <div class="col-12 col-md-6 offset-md-1 ">
+                    <label for="msg">Quick Message</label>
+                    <textarea name="msg" rows="6" cols="36"></textarea>
+                </div>
 
                 <button class="classic-btn classic-btn--filled" type="submit">Send</button>
             </form>

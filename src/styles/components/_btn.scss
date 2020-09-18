@@ -9,12 +9,24 @@
     position: relative;
     margin-top: 40px;
     display: inline-block;
+    transition: all 0.3s;
     &--filled{
         background-color: $c-text;
         color: $c-bg;
         border: none;
         padding: 15px 75px;
         margin-top: inherit;
+    }
+    &--space{
+        margin-top: 80px;
+    }
+    &:hover{
+        color: $c-bg;
+        text-decoration: none;
+        background-color: $c-text;
+        transform: scale(1.06);
+        transition: all 0.3s;
+        border-color: $c-text;
     }
 }
 

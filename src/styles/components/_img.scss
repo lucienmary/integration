@@ -42,7 +42,7 @@
     }
 }
 
-.row > div {
+.gallery > div {
       padding: 0 6px !important;
 }
 
@@ -62,5 +62,13 @@
     .main-img{
         margin-top: -240px;
         top: 0;
+    }
+
+    .img-blog{
+        margin-top: 40px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }

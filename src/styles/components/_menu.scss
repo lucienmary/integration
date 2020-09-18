@@ -39,6 +39,14 @@
         .active{
             color: $c-main;
         }
+        a{
+            transition: all 0.1s ease-out;
+            &:hover{
+                text-decoration: none;
+                color: $c-text;
+                transition: all 0.3s ease-out;
+            }
+        }
     }
 }
 
@@ -54,6 +62,12 @@
         a{
             color: $c-text-light;
             font-size: 11px;
+            transition: all 0.1s ease-out;
+            &:hover{
+                text-decoration: none;
+                color: $c-text;
+                transition: all 0.3s ease-out;
+            }
         }
     }
 }
@@ -73,6 +87,12 @@
         a{
             color: $c-text-light;
             font-size: 11px;
+            transition: all 0.1s ease-out;
+            &:hover{
+                text-decoration: none;
+                color: $c-text;
+                transition: all 0.3s ease-out;
+            }
         }
         &--used a{
             color: $c-text;

@@ -36,22 +36,25 @@ section{
     margin-top: 140px;
 }
 
-// @media (min-width: 576px) {
-//     .logo{
-//         width: 72px;
-//         height: 72px;
-//         a{
-//             p{
-//                 top: 12px;
-//                 font-size: 42px;
-//             }
-//         }
-//         &:after{
-//             width: 15px;
-//             height: 15px;
-//         }
-//     }
-// }
-//
-// @media (min-width: 768px) {
-// }
+.line{
+    position: fixed;
+
+    top: 0px;
+    left: 72px;
+    height: 100vh;
+    width: 1px;
+    background-color: $c-line;
+
+    &--mid1{
+        left: 33%;
+    }
+
+    &--mid2{
+        left: 66%;
+    }
+
+    &--right{
+        left: inherit;
+        right: 72px;
+    }
+}
